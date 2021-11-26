@@ -1,0 +1,49 @@
+{
+    "name": "zorachka/telegram",
+    "description": "Zorachka Telegram",
+    "keywords": [
+        "zorachka",
+        "telegram"
+    ],
+    "homepage": "https://github.com/zorachka/telegram",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Siarhei Bautrukevich",
+            "email": "hello@bautrukevich.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "telegram-bot/api": "^2.3",
+        "zorachka/command-bus": "dev-master",
+        "zorachka/console": "^1.0",
+        "zorachka/container": "^2.0",
+        "zorachka/http": "dev-main"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
+    },
+    "autoload": {
+        "psr-4": {
+            "Zorachka\\Framework\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Zorachka\\Framework\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../../zorachka/command-bus"
+        }
+    ]
+}
