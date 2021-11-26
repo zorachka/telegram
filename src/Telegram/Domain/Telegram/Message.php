@@ -23,20 +23,25 @@ final class Message
         $this->isSilent = $isSilent;
     }
 
-    /**
-     * @param ChatId $chatId
-     * @param Text $text
-     * @param ParseMode $parseMode
-     * @param bool $isSilent
-     * @return static
-     */
-    public static function create(
+    public static function markdown(
         ChatId $chatId,
         Text $text,
-        ParseMode $parseMode,
-        bool $isSilent = false
+        bool $isSilent = false,
     ): self {
-        return new self($chatId, $text, $parseMode, $isSilent);
+        return new self($chatId, $text, ParseMode::markdown(), $isSilent);
+    }
+
+    public static function html(
+        ChatId $chatId,
+        HtmlText $text,
+        bool $isSilent = false,
+    ): self {
+        return new self(
+            $chatId,
+            Text::fromString($text->asString()),
+            ParseMode::html(),
+            $isSilent
+        );
     }
 
     /**
