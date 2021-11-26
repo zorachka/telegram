@@ -17,7 +17,7 @@
     "require": {
         "php": "^8.0",
         "telegram-bot/api": "^2.3",
-        "zorachka/command-bus": "dev-master",
+        "zorachka/command-bus": "dev-main",
         "zorachka/console": "^1.0",
         "zorachka/container": "^2.0",
         "zorachka/http": "dev-main"
@@ -40,11 +40,5 @@
         "sort-packages": true
     },
     "minimum-stability": "dev",
-    "prefer-stable": true,
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../../zorachka/command-bus"
-        }
-    ]
+    "prefer-stable": true
 }
