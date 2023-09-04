@@ -23,7 +23,6 @@ final class SetWebhookCommand extends Command
     }
 
     /**
-     * @return void
      */
     protected function configure(): void
     {

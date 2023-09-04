@@ -24,7 +24,6 @@ final class SetCommands extends Command
     }
 
     /**
-     * @return void
      */
     protected function configure(): void
     {
